@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background: rgb(39, 39, 39);
+    color: white;
+    min-height: 100vh;
+}
+nav{
+    padding: 20%;
+}
+nav h2 {
+    font-size: 1.5rem;
+    
+}
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    
+}
