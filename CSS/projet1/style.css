@@ -146,5 +146,20 @@ button {
     grid-template-columns: 1fr 2fr;
 }
 .left-part {
-    text
+    text-align: start;
+    padding: 25px 0 25px 90px;
+}
+.left-part h2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-weight:normal;
+}
+.left-part p {
+    padding-top: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.right-part {
+    justify-content: right;
 }
