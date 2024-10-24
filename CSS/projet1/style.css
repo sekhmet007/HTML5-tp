@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0mi ;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+body {
+    min-height: 100vh;
+}
+nav {
+    max-width: 1100px;
+    margin: 15px auto; 
+    padding-top: 15px;
+}
+nav ul{
+    display: flex;
+    padding: 0 25px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+}
+nav li {
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+nav li:first-child {
+    color:blueviolet;
+}
+nav li:nth-child(1):before{
+    height: 3px;
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: blueviolet;
+    transform: translateY(-10px);
+}
+nav li::before{
+    height: 3px;
+    content: "";
+    width: 0;
+    position: absolute;
+    background: blueviolet;
+    transform: translateY(-10px);
+}
+nav li:hover {
+    color:blueviolet;
+}
+nav li:hover::before {
+    width: 100%;
+}
+nav li :hover {
+    color: blueviolet;
+}
+nav li:last-child::before{
+    background: none;
+}
+#language {
+    background-color: lightgrey;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+header{
+    background: url(./assets/img/bg.jpg) center/cover;
+    min-height: 700px; 
+}
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0;
+}
+#logo {
+   
+}
+#logo img {
+    
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: white;
+    background: none;
+    width: 300px;
+    height: 40px;
+    letter-spacing: .15rem;
+    border-color: white;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.header-text p {
+    font-size: 1rem;
+    font-weight:bold;
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+}
+.icon-part {
+    display: flex;
+    background: black;
+    height: 500px;
+    padding: 25px;
+}
+.icon-part-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.list-icon-part {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.list-icon-part h3{
+    text-transform: uppercase;
+    padding-top: 40px;
+    font-size: 1rem;
+}
+.list-icon-part p {
+   padding-top: 20px;
+   font-size: 0.8rem;
+   width: 70%;
+}
+.list-icon-part button {
+    width: 180px;
+}
+.header-news {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.left-part {
+    text
+}
