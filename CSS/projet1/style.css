@@ -11,6 +11,8 @@ li {
 }
 body {
     min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
 }
 nav {
     max-width: 1100px;
@@ -141,13 +143,20 @@ button {
 .list-icon-part button {
     width: 180px;
 }
+.news-part {
+    background: rgba(222, 222, 222, 0.434);
+    height: 700px;
+}
 .header-news {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 .left-part {
+    display: grid;
     text-align: start;
-    padding: 25px 0 25px 90px;
 }
 .left-part h2 {
     font-size: 1.3rem;
@@ -161,5 +170,163 @@ button {
     font-weight: bold;
 }
 .right-part {
-    justify-content: right;
+   display: grid;
+   justify-content: center;
+}
+.right-part button {
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    font-size: 0.8rem;
+    width: 200px;
+}
+.main-news {
+    padding-top: 40px;
+}
+.main-news-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    min-height: 450px;
+}
+.main-news-container > div {
+    position: relative;
+    max-width: 23%;
+}
+.mn-pic img {
+    box-shadow: 5px 5px 5px #666666;
+}
+.main-news-container h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 20px;
+}
+.main-news-container p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: left;
+    line-height: 1.1rem;
+}
+.link {
+    padding-top: 25px;
+    bottom: 0;
+    position: absolute;
+
+}
+.link a {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: blueviolet;
+    text-decoration: none;
+}
+.contact-container {
+    padding-top: 60px;
+    
+}
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1100px;
+    justify-content: space-between;
+    
+}
+.contact-list > div {
+    position: relative;
+    max-width: 23%;
+}
+.list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.list h5 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: bolder;
+    
+}
+.list h6 {
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: bolder;
+}
+.list p {
+    font-size: 0.7rem;
+    text-align: left;
+    font-weight: bolder;
+    margin: 10px 0 10px 0;
+    line-height: 1.2rem;
+    
+}
+.infos-p {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 10px;
+    padding-inline-start: 0;
+}
+.list a {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.network {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.footer-logos {
+}
+.contact-medias {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.medias-text{
+    text-align: left;
+}
+.medias-text h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.medias-text p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.img {
+    padding: 8px;
+}
+footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    height: 180px;
+}
+footer h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 25px;
+}
+footer ul {
+    display: flex;
+    align-items: center;
+}
+footer li {
+    padding: 10px;
 }
