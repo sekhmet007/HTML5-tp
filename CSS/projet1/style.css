@@ -114,7 +114,7 @@ button {
 .icon-part {
     display: flex;
     background: black;
-    height: 500px;
+    min-height: 500px;
     padding: 25px;
 }
 .icon-part-container{
@@ -329,4 +329,72 @@ footer ul {
 }
 footer li {
     padding: 10px;
+    width: 100%;
+}
+@media screen and (max-width: 1000px) {
+    body {
+        background: blue;
+    }
+    .icon-part-container {
+    
+    }
+    .mn-pic img {
+        width: 80%;
+        height: 80%;
+    }
+    footer li img {
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    body {
+        background: pink;
+    }
+    .icon-part-container {
+        align-items: stretch;
+    }
+    .contact-list {
+        justify-content: space-around ;
+    }  
+}
+@media screen and (max-width: 790px)  {
+    body{
+        background: lightgreen;
+    }
+    nav ul {
+        font-size: 0.5rem;
+    }
+    .icon-part-container {
+        display: block;
+    }
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    } 
+    .list {
+        display: block;
+        padding: 20px 0 20px 0;
+    }     
+}
+@media screen and (max-width: 680px) {
+    body {
+        background: turquoise;
+    }
+    nav ul {
+        font-size: 0.3rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    body {
+        background: yellow;
+    }
+    nav {
+        display: none
+    }
+    #logo img {
+        height: 80%;
+        width: 80%;
+    }
 }
